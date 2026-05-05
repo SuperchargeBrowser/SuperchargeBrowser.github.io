@@ -81,10 +81,6 @@ The extensions are proprietary and closed-source. Documentation and reference ma
         "addressCountry": "FI",
         "addressLocality": "Helsinki"
       },
-      "founder": {
-        "@type": "Person",
-        "name": "Ossi Lönnström"
-      },
       "foundingDate": "2025",
       "sameAs": [
         "https://github.com/SuperchargeBrowser",
