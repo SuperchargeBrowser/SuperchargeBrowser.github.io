@@ -86,7 +86,8 @@ The extensions are proprietary and closed-source. Documentation and reference ma
         "https://github.com/SuperchargeBrowser",
         "https://chromewebstore.google.com/detail/pafkkbjmpnfkdkkhldbbnggnmpbbhkmf",
         "https://chromewebstore.google.com/detail/mpkbppjbchjdohbjgeoamdehklmapgnl",
-        "https://x.com/SuperchargeExt"
+        "https://x.com/SuperchargeExt",
+        "https://www.wikidata.org/wiki/Q139671869"
       ],
       "makesOffer": [
         {
@@ -100,7 +101,8 @@ The extensions are proprietary and closed-source. Documentation and reference ma
             "operatingSystem": "Chrome 120+, Windows, macOS, Linux, ChromeOS",
             "url": "https://www.superchargebrowser.com/performance/",
             "installUrl": "https://chromewebstore.google.com/detail/pafkkbjmpnfkdkkhldbbnggnmpbbhkmf",
-            "softwareVersion": "1.3.2"
+            "softwareVersion": "1.3.2",
+            "sameAs": ["https://www.wikidata.org/wiki/Q139671950"]
           },
           "price": "0",
           "priceCurrency": "USD"
@@ -117,7 +119,8 @@ The extensions are proprietary and closed-source. Documentation and reference ma
             "url": "https://www.superchargebrowser.com/navigation/",
             "installUrl": "https://chromewebstore.google.com/detail/mpkbppjbchjdohbjgeoamdehklmapgnl",
             "softwareVersion": "1.1.0",
-            "availabilityStarts": "2026-03-13"
+            "availabilityStarts": "2026-03-13",
+            "sameAs": ["https://www.wikidata.org/wiki/Q139671978"]
           },
           "price": "0",
           "priceCurrency": "USD"
