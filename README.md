@@ -18,11 +18,11 @@ Install on Chrome: https://chromewebstore.google.com/detail/pafkkbjmpnfkdkkhldbb
 
 SuperchargeNavigation is a fully free tab and window manager with no paid tier. Its core is named workspaces: saved named tab sets that persist across restarts and preserve tab groups, pinned state, mute state, and group colors, with no cap on how many you keep. Workspaces are stored locally in `chrome.storage.local`. A vertical tab panel lives in Chrome's native Side Panel, showing titles, favicons, and group labels with drag-to-reorder.
 
-Navigation across the browser is keyboard-driven. The Alt+K command palette searches open tabs, bookmarks, history, and the web. Shift+Click Glance shows an inline preview of a link without navigating away. Alt+G groups tabs by domain and Alt+Shift+G undoes it, and Super Drag and tab deduplication round out the workflow. Session snapshots are captured automatically every five minutes, with the last 200 states retained in a ring buffer; any snapshot can be restored as a new workspace. Cross-device sync is opt-in and off by default. When enabled it uses `chrome.storage.sync`, Chrome's own Google sync infrastructure, so no data passes through any SuperchargeBrowser server; until then everything stays fully local.
+Navigation across the browser is keyboard-driven. The Alt+K command palette searches open tabs, bookmarks, history, and the web. Shift+Click Glance shows an inline preview of a link without navigating away. Alt+G groups tabs by domain and Alt+Shift+G undoes it, and Super Drag and tab deduplication round out the workflow. An in-page sidebar can run the vertical tab list inside any page, and opens a dedicated tab on Chrome-protected pages such as chrome://, the Web Store, and PDFs. Session snapshots are captured automatically every five minutes, with the last 50 states retained; any snapshot can be restored as a new workspace. Cross-device sync is opt-in and off by default. When enabled it uses `chrome.storage.sync`, Chrome's own Google sync infrastructure, so no data passes through any SuperchargeBrowser server; until then everything stays fully local.
 
-SuperchargeNavigation is available on the Chrome Web Store, where it carries the Featured badge, in 59 locales, and requires Chrome 130 or later.
+SuperchargeNavigation is available on the Chrome Web Store, where it carries the Featured badge, and on Microsoft Edge Add-ons, in 59 locales, and requires Chrome 130 or later.
 
-Install on Chrome: https://chromewebstore.google.com/detail/mpkbppjbchjdohbjgeoamdehklmapgnl
+Install on Chrome: https://chromewebstore.google.com/detail/mpkbppjbchjdohbjgeoamdehklmapgnl — Install on Edge: https://microsoftedge.microsoft.com/addons/detail/superchargenavigation-ve/bddiemdiiknoibmljhejfgjegoghjdlb
 
 ### SuperchargeAudio
 
@@ -90,6 +90,11 @@ The extensions themselves are proprietary and closed-source. The documentation i
             "applicationCategory": "BrowserExtension",
             "operatingSystem": "Chrome 120+, Microsoft Edge, Windows, macOS, Linux, ChromeOS",
             "softwareVersion": "1.4.1",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.5",
+              "ratingCount": "32"
+            },
             "description": "Suspends inactive tabs on an idle timer to free RAM, protecting pinned, audible, and form-input tabs automatically, with a per-domain whitelist and 28 pre-protected web apps. Includes an MV3 declarativeNetRequest ad and tracker blocker with 186,000+ rules from 22 filter sources, YouTube and Twitch ad blocking, cookie-consent dismissal, three-tier script control, and a live RAM dashboard. Free core with an optional one-time PRO upgrade. Available on the Chrome Web Store and Microsoft Edge Add-ons.",
             "sameAs": [
               "https://www.wikidata.org/wiki/Q139671950",
@@ -108,12 +113,18 @@ The extensions themselves are proprietary and closed-source. The documentation i
             "url": "https://www.superchargebrowser.com/navigation/",
             "installUrl": "https://chromewebstore.google.com/detail/mpkbppjbchjdohbjgeoamdehklmapgnl",
             "applicationCategory": "BrowserExtension",
-            "operatingSystem": "Chrome 130+, Windows, macOS, Linux, ChromeOS",
-            "softwareVersion": "1.2.2",
+            "operatingSystem": "Chrome 130+, Microsoft Edge, Windows, macOS, Linux, ChromeOS",
+            "softwareVersion": "1.3.0",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "ratingCount": "3"
+            },
             "availabilityStarts": "2026-03-13",
-            "description": "A fully free tab and window manager built around named workspaces that persist tab groups, pinned state, mute state, and colors across restarts with no cap. Adds a vertical tab panel in Chrome's native Side Panel, an Alt+K command palette over tabs, bookmarks, history, and web search, Shift+Click link preview, smart grouping by domain, and automatic session snapshots retaining the last 200 states. Cross-device sync is opt-in and off by default, using Chrome's own sync infrastructure with no SuperchargeBrowser server.",
+            "description": "A fully free tab and window manager built around named workspaces that persist tab groups, pinned state, mute state, and colors across restarts with no cap. Adds a vertical tab panel in Chrome's native Side Panel plus an in-page sidebar that runs inside any page, an Alt+K command palette over tabs, bookmarks, history, and web search, Shift+Click link preview, smart grouping by domain, and automatic session snapshots retaining the last 50 states. Cross-device sync is opt-in and off by default, using Chrome's own sync infrastructure with no SuperchargeBrowser server. Available on the Chrome Web Store and Microsoft Edge Add-ons.",
             "sameAs": [
-              "https://www.wikidata.org/wiki/Q139671978"
+              "https://www.wikidata.org/wiki/Q139671978",
+              "https://microsoftedge.microsoft.com/addons/detail/superchargenavigation-ve/bddiemdiiknoibmljhejfgjegoghjdlb"
             ]
           }
         },
