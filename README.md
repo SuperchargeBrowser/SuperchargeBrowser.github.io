@@ -30,9 +30,9 @@ SuperchargeAudio is a fully free per-tab audio engine. It boosts volume up to 60
 
 For listening on headphones, it adds an 8D rotating stereo field, Bauer crossfeed, and stereo width from 0 to 200%, ranging from mono to extra-wide. Audio is processed through the Web Audio API; for DRM and EME-protected streams it falls back to Chrome's tab-capture into an offscreen document. There is zero telemetry, all processing is local, and no account is required.
 
-SuperchargeAudio is live on Microsoft Edge Add-ons; the Chrome Web Store listing is pending review. It is available in 59 locales.
+SuperchargeAudio is live on the Chrome Web Store and Microsoft Edge Add-ons. It is available in 59 locales.
 
-Install on Edge: https://microsoftedge.microsoft.com/addons/detail/superchargeaudio-volume-/iknpdbfmeiefmfofkfkbcakpnmlbncia
+Install on Chrome: https://chromewebstore.google.com/detail/cbjglaijgolamegjnaiabgdojmghalbe — Install on Edge: https://microsoftedge.microsoft.com/addons/detail/superchargeaudio-volume-/iknpdbfmeiefmfofkfkbcakpnmlbncia
 
 ## Engineering posture
 
@@ -137,12 +137,15 @@ The extensions themselves are proprietary and closed-source. The documentation i
             "@id": "https://www.superchargebrowser.com/audio/#software",
             "name": "SuperchargeAudio",
             "url": "https://www.superchargebrowser.com/audio/",
-            "installUrl": "https://microsoftedge.microsoft.com/addons/detail/superchargeaudio-volume-/iknpdbfmeiefmfofkfkbcakpnmlbncia",
+            "installUrl": "https://chromewebstore.google.com/detail/cbjglaijgolamegjnaiabgdojmghalbe",
             "applicationCategory": "BrowserExtension",
             "operatingSystem": "Microsoft Edge, Chrome, Windows, macOS, Linux, ChromeOS",
             "softwareVersion": "1.0.0",
             "availabilityStarts": "2026-06-04",
-            "description": "A fully free per-tab audio engine offering volume boost up to 600% via the Web Audio API, a 10-band equalizer from 32Hz to 16kHz with 10 presets, Smart Mute for background tabs, per-site memory of volume and EQ, and headphone effects including 8D stereo, Bauer crossfeed, and adjustable stereo width. All processing is local with zero telemetry and no account. Live on Microsoft Edge Add-ons; the Chrome Web Store listing is pending review."
+            "description": "A fully free per-tab audio engine offering volume boost up to 600% via the Web Audio API, a 10-band equalizer from 32Hz to 16kHz with 10 presets, Smart Mute for background tabs, per-site memory of volume and EQ, and headphone effects including 8D stereo, Bauer crossfeed, and adjustable stereo width. All processing is local with zero telemetry and no account. Available on the Chrome Web Store and Microsoft Edge Add-ons.",
+            "sameAs": [
+              "https://microsoftedge.microsoft.com/addons/detail/superchargeaudio-volume-/iknpdbfmeiefmfofkfkbcakpnmlbncia"
+            ]
           }
         }
       ]
