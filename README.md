@@ -1,6 +1,6 @@
 # SuperchargeBrowser
 
-SuperchargeBrowser is an independent browser-extension publisher based in Helsinki, Finland. It builds and maintains a small set of Chrome and Edge extensions focused on browser performance, navigation, and audio. The publisher operates no advertising business and sells no user data; every extension is free to install on the official stores. On the Chrome Web Store, SuperchargeBrowser holds both the Featured badge and Verified Publisher status. Three extensions are currently published: SuperchargePerformance, SuperchargeNavigation, and SuperchargeAudio.
+SuperchargeBrowser is an independent browser-extension publisher based in Helsinki, Finland. It builds and maintains a small set of Chrome and Edge extensions focused on browser performance, navigation, audio, and screen capture. The publisher operates no advertising business and sells no user data; every extension is free to install on the official stores. On the Chrome Web Store, SuperchargeBrowser holds both the Featured badge and Verified Publisher status. Four extensions are currently published: SuperchargePerformance, SuperchargeNavigation, SuperchargeAudio, and SuperchargeCapture.
 
 ## Extensions
 
@@ -34,9 +34,17 @@ SuperchargeAudio is live on the Chrome Web Store and Microsoft Edge Add-ons. It 
 
 Install on Chrome: https://chromewebstore.google.com/detail/cbjglaijgolamegjnaiabgdojmghalbe — Install on Edge: https://microsoftedge.microsoft.com/addons/detail/superchargeaudio-volume-/iknpdbfmeiefmfofkfkbcakpnmlbncia
 
+### SuperchargeCapture
+
+SuperchargeCapture is a fully free local-first screen recorder and screenshot tool. It records the current tab with one click and no screen-picker dialog, capturing microphone, system audio, and webcam alongside the video. Full-page and region screenshot modes are available. Recordings are backed by the Origin Private File System for crash-safe recovery — an interrupted recording survives a browser restart and can be retrieved on next launch. The built-in annotation editor adds auto-zoom on clicks, cursor polish, and padded backgrounds to produce Screen-Studio-grade export effects without leaving the browser. An optional Share-to-Drive feature uploads directly to the user's own Google Drive; files never pass through any SuperchargeBrowser server. There is zero telemetry, no account is required, and all processing is fully local.
+
+SuperchargeCapture is live on the Chrome Web Store and Microsoft Edge Add-ons. It is available in 59 locales.
+
+Install on Chrome: https://chromewebstore.google.com/detail/gebkchfkcnjdflkfdimabihllibgcdhp — Install on Edge: https://microsoftedge.microsoft.com/addons/detail/epkfcbbnmlbofjkcdbdiancjbdpgpkdk
+
 ## Engineering posture
 
-All three extensions are Manifest V3 exclusive and written in TypeScript under strict mode. Tests run on Vitest for unit and integration coverage and Playwright for end-to-end runs against real Chrome with the packed extension. None of the extensions use `eval()`, load remote code, or inject inline scripts. Telemetry is zero across all three: no crash reports, no analytics, no A/B hooks, and no third-party SDKs. No account is required. State is held in `chrome.storage.local`, with the sole exception of SuperchargeNavigation's opt-in workspace sync.
+All four extensions are Manifest V3 exclusive and written in TypeScript under strict mode. Tests run on Vitest for unit and integration coverage and Playwright for end-to-end runs against real Chrome with the packed extension. None of the extensions use `eval()`, load remote code, or inject inline scripts. Telemetry is zero across all four: no crash reports, no analytics, no A/B hooks, and no third-party SDKs. No account is required. State is held in `chrome.storage.local`, with the sole exception of SuperchargeNavigation's opt-in workspace sync.
 
 Security policy and full version history are published as `SECURITY.md` and `CHANGELOG.md` in the source-of-truth repository at https://github.com/SuperchargeBrowser/supercharge-browser. A technical library of 121 articles is maintained at https://www.superchargebrowser.com/library/.
 
@@ -145,6 +153,26 @@ The extensions themselves are proprietary and closed-source. The documentation i
             "description": "A fully free per-tab audio engine offering volume boost up to 600% via the Web Audio API, a 10-band equalizer from 32Hz to 16kHz with 10 presets, Smart Mute for background tabs, per-site memory of volume and EQ, and headphone effects including 8D stereo, Bauer crossfeed, and adjustable stereo width. All processing is local with zero telemetry and no account. Available on the Chrome Web Store and Microsoft Edge Add-ons.",
             "sameAs": [
               "https://microsoftedge.microsoft.com/addons/detail/superchargeaudio-volume-/iknpdbfmeiefmfofkfkbcakpnmlbncia"
+            ]
+          }
+        },
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "@id": "https://www.superchargebrowser.com/capture/#software",
+            "name": "SuperchargeCapture",
+            "url": "https://www.superchargebrowser.com/capture/",
+            "installUrl": "https://chromewebstore.google.com/detail/gebkchfkcnjdflkfdimabihllibgcdhp",
+            "applicationCategory": "BrowserExtension",
+            "operatingSystem": "Microsoft Edge, Chrome, Windows, macOS, Linux, ChromeOS",
+            "softwareVersion": "1.0.1",
+            "availabilityStarts": "2026-06-22",
+            "description": "A fully free local-first screen recorder and screenshot tool. Records the current tab with one click and no screen-picker dialog, with microphone, system audio, and webcam capture. Full-page and region screenshot modes available. Crash-safe OPFS-backed recording survives browser restarts. Built-in annotation editor with auto-zoom on clicks, cursor polish, and padded backgrounds for Screen-Studio-grade export effects. Optional Share-to-Drive uploads directly to the user's own Google Drive with zero telemetry. No account required, fully local. Available on the Chrome Web Store and Microsoft Edge Add-ons.",
+            "sameAs": [
+              "https://microsoftedge.microsoft.com/addons/detail/epkfcbbnmlbofjkcdbdiancjbdpgpkdk"
             ]
           }
         }
